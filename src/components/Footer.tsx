@@ -8,6 +8,7 @@ import { ReactComponent as FacebookMobile } from '@/assets/facebook-2.svg'
 import { ReactComponent as LinkInMobile } from '@/assets/linkedin-2.svg'
 import { ReactComponent as TwitterMobile } from '@/assets/twitter-2.svg'
 import { ReactComponent as YoutubeMobile } from '@/assets/youtube-2.svg'
+import Logo2 from '@/assets/logo-2.png'
 
 export default function Footer() {
   return (
@@ -24,7 +25,7 @@ export default function Footer() {
       <div className='md:grow flex max-w-[1028px] mx-auto md:items-center'>
         <div className='grid md:grid-cols-2 grid-cols-1 md:px-0 px-5'>
           <div className='flex flex-col gap-6'>
-            <img src='/public/logo-2.png' width={414} />
+            <img src={Logo2} width={414} />
             <div className='md:flex flex-col gap-5 hidden'>
               <h1 className='text-white text-2xl font-bold'>Follow Us</h1>
               <div className='flex gap-4'>

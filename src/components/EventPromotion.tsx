@@ -1,6 +1,7 @@
 import { ReactComponent as Share } from '@/assets/share.svg'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import PlaceholderImg from '@/assets/placeholder-img.svg'
 
 function Card() {
   return (
@@ -13,7 +14,7 @@ function Card() {
       >
         <div className='flex-1'>
           <div className='flex w-full h-full justify-center items-center group-hover:hidden'>
-            <img src='/public/icons/placeholder-img.svg' width={220} />
+            <img src={PlaceholderImg} width={220} />
           </div>
           <div className='justify-between group-hover:flex hidden'>
             <p className='md:text-4xl text-xl text-white font-bold uppercase flex-1'>short title here</p>
@@ -43,7 +44,7 @@ function Card() {
 export default function EventPromotion() {
   return (
     <section className='h-screen snap-start w-full bg-secondary pt-[72px]'>
-      <div className='max-w-[1028px] mx-auto px-3 lg:mb-16 mb-12'>
+      <div className='max-w-[1028px] mx-auto px-3 mb-10'>
         <h1 className='font-bold text-primary md:text-[45px] text-2xl mb-3'>Special Events & Promotional</h1>
         <p className='text-primary md:text-2xl text-xl'>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et

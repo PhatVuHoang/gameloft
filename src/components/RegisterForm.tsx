@@ -1,12 +1,13 @@
 import Button from './Button'
 import Input from './Input'
 import Select from './Select'
+import MinionGrey2 from '@/assets/minion.png'
 
 export default function RegisterForm() {
   return (
-    <section className='w-full h-screen md:mt-0 mt-[180px] md:snap-start bg-secondary bg-opacity-50'>
+    <section className='w-full h-screen md:snap-start bg-secondary bg-opacity-50'>
       <div className='h-full items-center grid md:grid-cols-2 grid-cols-1 max-w-[1028px] mx-auto px-5 gap-6'>
-        <img src='/public/Minion-Grey2.png' alt='minion-grey2' className='md:block hidden' />
+        <img src={MinionGrey2} alt='minion-grey2' className='md:block hidden' />
         <div className='flex flex-col gap-7 max-w-[251px] md:mx-0 mx-auto'>
           <div>
             <h1 className='text-2xl text-primary font-bold'>Stay in the Know!</h1>
