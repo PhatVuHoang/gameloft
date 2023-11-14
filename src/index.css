@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2699FB;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  text-align: center;
+  margin-top: 62px;
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet span {
+  color: #2699FB;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* button circle */
+.progress {
+  transform: rotate(-90deg);
+}
+.circle-origin {
+  fill: transparent;
+  stroke: #2699FB;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 125.664px;
+  stroke-dashoffset: 125.664px;
+}
+
+.swiper-pagination-bullet-active .circle-origin {
+  animation: progress 3s;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dashoffset: 125.664px;
+  }
+
+  90% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -125.664px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+  }
+}
